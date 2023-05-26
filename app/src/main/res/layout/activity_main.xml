@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_refresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment_blue"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:name="androidkotlin.formation.kotlinavancee.BlueFragment"
+            tools:layout="@layout/fragment_blue" />
+
+        <fragment
+            android:id="@+id/fragment_red"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:name="androidkotlin.formation.kotlinavancee.RedFragment"
+            tools:layout="@layout/fragment_red" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/label_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <Button
+            android:id="@+id/call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appel téléphonique"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            style="?android:attr/progressBarStyleHorizontal"
+            app:layout_constraintTop_toBottomOf="@+id/barInfinie"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:progress="50"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/progress_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+5"/>
+
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingQuantity">
+    <string name="app_name">KotlinAvancee</string>
+    <plurals name="label_player">
+        <item quantity="one">%d Joueur</item>
+        <item quantity="other">%d Joueurs</item>
+    </plurals>
+</resources>
